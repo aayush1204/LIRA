@@ -1,0 +1,26 @@
+/*********** contact part css start ***********/
+.contact_part{
+    @include background ("../img/contactusimg.jpg");
+    .contact_part_iner{
+        padding: 50px;
+        background-color: $white_color;
+        @media #{$tab}{
+            padding: 20px;
+        }
+        h3{
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        .single_contact_part{
+            margin-top: 30px;
+            h5{
+                font-size: 16px;
+                text-transform: uppercase;
+                font-family: $font_stack_1;
+            }
+            p{
+                color: #7b7b7b;
+            }
+        }
+    }
+}

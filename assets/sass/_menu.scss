@@ -1,0 +1,155 @@
+/**************menu part start*****************/
+.home_menu{
+	.main-menu-item {
+		padding-right: 100px;
+	}
+	.menu_btn{
+		&:hover a{
+			color: $white-color !important;
+		}
+	}
+}
+.main_menu {
+	.navbar-brand {
+		padding-top: 0rem;
+		padding-bottom: 0px;
+	}
+	
+	.navbar {
+		padding: 0px;
+		@media #{$tab}{
+			padding: 20px 0;
+		}
+	}
+	.main-menu-item {
+		text-align: center !important;
+		justify-content: center !important;
+		ul {
+			li a {
+				color: $white_color !important;
+				font-size: 14px;
+				padding: 40px 22px !important;
+				text-transform: uppercase;
+				font-family: $font_stack_1;
+				@media #{$tab}{
+					padding: 10px 16px !important;
+					color: $black_color !important;
+				}
+
+				&:hover{
+					color: $btn_bg !important;
+				}
+			}
+			
+		}
+	}
+	.social_icon{
+		i{
+			color: $white_color;
+			margin-left: 20px;
+		}
+	}
+	.dropdown-item{
+		color: #000 !important;
+	}
+}
+
+.home_menu {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+}
+
+.menu_fixed {
+	position: fixed;
+	z-index: 9999 !important;
+	width: 100%;
+	background-color: $base_color;
+	box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+	top: 0;
+
+	span {
+		color: #000 !important;
+	}
+	.btn_1{
+		border: 2px solid $btn_bg;
+		&:hover{
+			border: 2px solid transparent;
+		}
+	}
+	.main-menu-item {
+		padding-right: 0px;
+	}
+	.main-menu-item ul li a {
+		&:hover{
+			color: #000 !important;
+		}
+	}
+}
+.dropdown-menu{
+	border: 0px solid rgba(0,0,0,.15) !important;
+	background-color: #fafafa;
+}
+
+.dropdown {
+    .dropdown-menu {
+        transition: all 0.5s;
+        overflow: hidden;
+        transform-origin: top center;
+        transform: scale(1,0);
+		display: block;
+		.dropdown-item{
+			font-size: 14px;
+			padding: 9px 18px !important;
+			color: $black_color !important;
+		}
+    }
+    &:hover {
+        .dropdown-menu {
+            transform: scale(1);
+        }
+    }
+}
+@media #{$tab} {
+	.navbar-brand img{
+		max-width: 100px;
+	}
+	.navbar-light .navbar-toggler-icon {
+		background-image: url(../img/menu_icon.png);
+	}
+
+	.navbar-light .navbar-toggler{
+		border-color: transparent;
+		position: absolute;
+        right: 0;
+	}
+	.navbar-collapse {
+		z-index: 9999 !important;
+		position: absolute;
+		left: 0;
+		top: 71px;
+		width: 100%;
+		background-color: $white-color;
+		text-align: center !important;
+		
+	}
+	.main_menu .main-menu-item{
+		text-align: left !important;
+		box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+	}
+	.dropdown {
+		.dropdown-menu {
+			transform: scale(1,0);
+			display: none;
+		}
+		&:hover {
+			.dropdown-menu {
+				transform: scale(1);
+				display: block;
+			}
+		}
+	}
+}
+

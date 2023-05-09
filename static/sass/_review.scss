@@ -1,0 +1,115 @@
+/**************** review_part css start ****************/
+.review_part{
+  .client_review_part{
+    .client_review_img{
+      position: relative;
+      padding-left: 70px;
+      margin-top: 40px;
+      img{
+        max-width: 50px;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+  .client_review_single {
+    .client_review_text{
+      p{
+        font-size: 16px;
+        line-height: 28px;
+        padding: 20px 28px;
+        border: 1px solid #f6ede4;
+        margin: 1px;
+        position: relative;
+        z-index: 1;
+        &:after{
+          position: absolute;
+          content: "";
+          left: 20px;
+          bottom: -15px;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-top: 15px solid #f6ede4;
+          border-bottom-left-radius: 100px;
+        }
+        @media #{$small_mobile}{
+          font-size: 16px;
+         }
+         @media #{$large_mobile}{
+          font-size: 16px;
+         }
+         @media #{$tab_device}{
+          font-size: 16px;
+         }
+         @media #{$medium_device}{
+         
+         }
+      }
+      h4{
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #000;
+        padding-top: 6px;
+        line-height: 15px;
+        font-family: $font_stack_1;
+        @media #{$small_mobile}{
+          margin-top: 20px;
+          font-size: 20px;
+        }
+        @media #{$large_mobile}{
+          margin-top: 20px;    
+          font-size: 20px;
+        }
+        @media #{$tab_device}{
+          margin-top: 20px;    
+          font-size: 20px;
+        }
+        @media #{$medium_device}{
+        
+        }
+        span{
+          font-family: $font_stack_2;
+          font-size: 14px;
+          color: #555555;
+        }
+      }
+    }
+  }
+  .review_icon{
+    i{
+      color: $btn_hover;
+    }
+  }
+  .center{
+    .client_review_text{
+      p{
+        border: 1px solid #d6ad86;
+        &:after{
+          position: absolute;
+          content: "";
+          left: 20px;
+          bottom: -15px;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-top: 15px solid #d6ad86;
+          border-bottom-left-radius: 100px;
+        }
+      }
+    }
+  }
+  .owl-dots{
+    text-align: center;
+    margin-top: 75px;
+    button{
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: #f7efe7;
+      margin: 5px;
+    }
+    .active{
+      color: $base_color !important;
+    }
+  }
+}

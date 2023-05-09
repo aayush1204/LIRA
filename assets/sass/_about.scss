@@ -1,0 +1,70 @@
+/**************** about css start ****************/
+.about_part{
+    position: relative;
+    z-index: 1;
+    margin-top: -250px;
+    @media #{$tab}{
+        margin-top: -100px;
+    }
+    .about_text{
+        @media #{$tab}{
+            margin-bottom: 25px;
+        }
+        h5{
+            font-size: 18px;
+            text-transform: capitalize;
+            color: $base_color;
+            font-weight: 400;
+            font-family: $font_stack_1;
+        }
+
+        h2{
+            line-height: 56px;
+            font-size: 46px;
+            margin: 9px 0 30px;
+            @media #{$tab}{
+                font-size: 30px;  
+                line-height: 35px;
+                margin: 9px 0 15px;
+            }
+            @media #{$medium_device}{
+                font-size: 30px;  
+            }
+        }
+        p{
+            margin-top: 13px;
+        }
+        .btn_3{
+            margin-top: 48px;
+        }
+    }
+    .about_img{
+        img{
+            width: 100%;
+        }
+    }
+    .about_part_iner{
+        background-color: $white_color;
+        padding: 70px;
+        box-shadow: 0px 20px 40px 0px rgba(221, 221, 221, 0.3);
+        @media #{$tab}{
+            padding: 35px;
+        }
+    }
+}
+.single_about_page{
+    margin-top: 140px;
+    @media#{$tab}{
+        margin-top: 70px;
+    }
+    @media#{$medium_device}{
+        margin-top: 80px;
+    }
+    .about_part_iner{
+        padding: 0 50px 50px;
+        @media #{$tab}{
+            padding: 0 35px 35px;
+        }
+    }
+
+}

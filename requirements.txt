@@ -1,0 +1,10 @@
+django
+gensim
+nltk
+nlpcloud
+transformers
+torch
+openpyxl
+gunicorn==20.1.0
+whitenoise
+pandas

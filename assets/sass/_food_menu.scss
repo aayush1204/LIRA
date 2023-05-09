@@ -1,0 +1,86 @@
+/**************** food_menu css start ****************/
+.food_menu{
+    padding: 140px 0px 90px;
+    @media #{$small_mobile}{
+        padding: 70px 0px 50px;
+    }
+    @media #{$large_mobile}{
+        padding: 70px 0px 50px;
+    }
+    @media #{$tab_device}{
+        padding: 70px 0px 50px;
+    }
+    @media #{$medium_device}{
+        padding: 70px 0px 40px;
+    }
+    .single_food_item{
+        margin-bottom: 50px;
+        background-color: $white_color;
+        border: 1px solid #f3e6da;
+        @media #{$tab}{
+            margin-bottom: 20px;
+            padding: 30px 20px;
+        }
+        @media #{$medium_device}{
+            margin-bottom: 30px;
+        }
+        img{
+            @media #{$tab}{
+                border-right: 0px solid $section_bg;
+                margin: 0 auto;
+                display: block;
+                margin-right: auto !important;
+                text-align: center;
+                border-radius: 50%;
+            }
+            @media #{$medium_device}{
+            
+            } 
+        }
+        .media-body{
+            padding-left: 26px;
+            @media #{$small_mobile}{
+                margin-top: 10px;
+                padding-left: 00px;
+                text-align: center;
+            }
+            @media #{$large_mobile}{
+                margin-top: 10px;
+                padding-left: 00px;
+                text-align: center;
+            }
+            @media #{$tab_device}{
+                margin-top: 10px;
+                padding-left: 00px;
+                text-align: center;
+            }
+            @media #{$medium_device}{
+                padding-left: 15px;
+            }
+            h3{
+                font-size: 24px;
+                font-weight: 400;
+                text-transform: uppercase;
+                @media #{$large_mobile}{
+                    font-size: 18px;
+                }
+            }
+            h5{
+                font-size: 20px;
+                font-weight: 700;
+                color: $black_color;
+                margin-top: 20px;
+                font-family: $font_stack_1;
+                @media #{$small_mobile}{
+                    margin-top: 10px;
+                }
+                @media #{$large_mobile}{
+                    margin-top: 10px;
+                }
+                @media #{$tab_device}{
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
